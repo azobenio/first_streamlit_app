@@ -6,9 +6,10 @@ import requests
 streamlit.title('MY Moms New Healthy Diner')
 
 streamlit.header('🥣Breakfast Menu')
-streamlit.text('🥗Omega 3 & Blueberry Oatmeal')
-streamlit.text('🐔kale, Spinach & Rocket Smoothie')
-streamlit.text('🥑🍞Hard-Boiled free-range Egg')
+streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.text('🥗 kale, Spinach & Rocket Smoothie')
+streamlit.text('🐔 Hard-Boiled free-range Egg')
+streamlit.text('🥑🍞 Avocado Toast')
 
 streamlit.header('🍌🥭 Buid Your Own Fruit Smoothie 🥝🍇')
 
@@ -35,7 +36,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "fruit_choice")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 
 # write your own comment -what does the next line do? 
