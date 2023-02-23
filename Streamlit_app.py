@@ -1,6 +1,6 @@
 import streamlit
 import requests
-import snowdflake.connector
+import snowflake.connector
 import psycopg2
 
 
