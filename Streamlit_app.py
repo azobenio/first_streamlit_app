@@ -1,4 +1,8 @@
 import streamlit
+import request
+import snowdflake.connector
+import psycopg2
+
 
 streamlit.title('MY Moms New Healthy Diner')
 
@@ -28,4 +32,5 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 
-
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
