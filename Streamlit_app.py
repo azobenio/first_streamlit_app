@@ -1,7 +1,6 @@
 import streamlit
 import requests
-import snowflake.connector
-import psycopg2
+
 
 
 streamlit.title('MY Moms New Healthy Diner')
