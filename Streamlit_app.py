@@ -67,5 +67,5 @@ if streamlit.button('Add a Fruit to the List'):
   conn.close()
   streamlit.text(back_from_function)
   
-  # This will not work correctly, but just go woth it for now
-   my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+# This will not work correctly, but just go woth it for now
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
